@@ -1,0 +1,21 @@
+ros-kinetic-safe-teleop-base (0.0.2-0jessie) jessie; urgency=high
+
+
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Thu, 06 Jul 2017 15:00:00 -0000
+
+ros-kinetic-safe-teleop-base (0.0.1-0jessie) jessie; urgency=high
+
+  * add 'ROS Orphaned Package Maintainers' as maintainer (#6 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/6>)
+  * changed branch and fixed launch file
+  * catkinize the packages to work on hydro (#1 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/1>)
+  * fixed authors/maintainers in manifest files
+  * bug fix in safe_teleop_base
+  * fixed scope of topics published by safe_teleop_base
+  * bug fix in safe_teleop_base for holonomic robots
+  * added safe_teleop_base along with demos
+  * Contributors: Benjamin Pitzer, Charles Duhadway, Ryohei Ueda, Sarah Osentoski, Yuki Furuta
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Thu, 06 Jul 2017 15:00:00 -0000
+
+
