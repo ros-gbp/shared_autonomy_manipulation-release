@@ -1,0 +1,12 @@
+Source: ros-indigo-safe-teleop-stage
+Section: misc
+Priority: extra
+Maintainer: Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/safe_teleop_stage
+Standards-Version: 3.9.2
+
+Package: ros-indigo-safe-teleop-stage
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-joy, ros-indigo-safe-teleop-base, ros-indigo-stage
+Description: Demo of safe_teleop in stage
