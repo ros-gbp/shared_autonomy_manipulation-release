@@ -1,0 +1,12 @@
+Source: ros-kinetic-safe-teleop-stage
+Section: misc
+Priority: optional
+Maintainer: Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/safe_teleop_stage
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-safe-teleop-stage
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-joy, ros-kinetic-safe-teleop-base, ros-kinetic-stage
+Description: Demo of safe_teleop in stage
