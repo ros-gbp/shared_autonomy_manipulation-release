@@ -1,0 +1,28 @@
+ros-melodic-safe-teleop-pr2 (0.0.3-1stretch) stretch; urgency=high
+
+
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Wed, 18 Dec 2019 00:00:00 -0000
+
+ros-melodic-safe-teleop-pr2 (0.0.2-1stretch) stretch; urgency=high
+
+  * CMakeLists.txt : change catkin_package() (#9 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/issues/9> )
+  * CMakeLists.txt : fix install error (#8 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/issues/8>)
+  * Contributors: Kei Okada
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Fri, 07 Jul 2017 00:00:00 -0000
+
+ros-melodic-safe-teleop-pr2 (0.0.1-1stretch) stretch; urgency=high
+
+  * add 'ROS Orphaned Package Maintainers' as maintainer (#6 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/6>)
+  * safe_teleop_pr2 and safe_teleop_stage do not require safe_teleop_base at
+    build time (#3 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/3>)
+  * changed branch and fixed launch file
+  * catkinize the packages to work on hydro (#1 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/1>)
+  * fixed authors/maintainers in manifest files
+  * moved to shared_autonomy
+  * Contributors: Benjamin Pitzer, Ryohei Ueda, Sarah Osentoski, Yuki Furuta
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Fri, 07 Jul 2017 00:00:00 -0000
+
+
