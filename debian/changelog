@@ -1,0 +1,32 @@
+ros-melodic-safe-teleop-base (0.0.3-1bionic) bionic; urgency=high
+
+  * add clear_costmap service (#4 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/issues/4>)
+  * add param to plan safe trajectory on backwards (#13 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/issues/13>)
+  * update travis.yml and fix for latest costmap_2d using tf2 (#11 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/issues/11>)
+    * fix for latest costmap_2d using tf2
+    * remove pcl depends
+  * Contributors: Kei Okada, Yuki Furuta, Chi Wun Au
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Wed, 18 Dec 2019 00:00:00 -0000
+
+ros-melodic-safe-teleop-base (0.0.2-1bionic) bionic; urgency=high
+
+
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Fri, 07 Jul 2017 00:00:00 -0000
+
+ros-melodic-safe-teleop-base (0.0.1-1bionic) bionic; urgency=high
+
+  * add 'ROS Orphaned Package Maintainers' as maintainer (#6 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/6>)
+  * changed branch and fixed launch file
+  * catkinize the packages to work on hydro (#1 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/pull/1>)
+  * fixed authors/maintainers in manifest files
+  * bug fix in safe_teleop_base
+  * fixed scope of topics published by safe_teleop_base
+  * bug fix in safe_teleop_base for holonomic robots
+  * added safe_teleop_base along with demos
+  * Contributors: Benjamin Pitzer, Charles Duhadway, Ryohei Ueda, Sarah Osentoski, Yuki Furuta
+
+ -- Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>  Fri, 07 Jul 2017 00:00:00 -0000
+
+
