@@ -2,6 +2,9 @@
 Changelog for package safe_teleop_pr2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.3 (2019-12-18)
+------------------
+
 0.0.2 (2017-07-07)
 ------------------
 * CMakeLists.txt : change catkin_package() (`#9 <https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation/issues/9>`_ )

@@ -24,6 +24,7 @@
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/Twist.h>
 #include <geometry_msgs/Point.h>
+#include <std_srvs/Empty.h>
 
 #include <tf/transform_listener.h>
 
@@ -37,6 +38,13 @@
 
 
 namespace safe_teleop {
+
+#if ROS_VERSION_MINIMUM(1, 14, 0) // ROS_MELODIC
+typedef tf2_ros::Buffer TFListener;
+#else
+typedef tf::TransformListener TFListener;
+#endif
+
 /**
    * @class SafeTrajectoryPlannerROS
    * @brief A ROS wrapper for the trajectory controller that queries the param server to construct a controller
@@ -49,7 +57,7 @@ namespace safe_teleop {
        * @param tf A pointer to a transform listener
        * @param costmap The cost map to use for assigning costs to trajectories
        */
-      SafeTrajectoryPlannerROS(tf::TransformListener* tf, costmap_2d::Costmap2DROS* costmap_ros);
+      SafeTrajectoryPlannerROS(TFListener* tf, costmap_2d::Costmap2DROS* costmap_ros);
 
       /**
        * @brief  Destructor for the wrapper
@@ -95,6 +103,8 @@ namespace safe_teleop {
 
       void cmdCallback(const geometry_msgs::Twist::ConstPtr& vel);
 
+      bool clearCostmapsService(std_srvs::Empty::Request &req, std_srvs::Empty::Response &resp);
+
       std::vector<double> loadYVels(ros::NodeHandle node);
 
       ros::NodeHandle nh_;
@@ -103,7 +113,7 @@ namespace safe_teleop {
       SafeTrajectoryPlanner* tc_; ///< @brief The trajectory controller
       costmap_2d::Costmap2DROS* costmap_ros_; ///< @brief The ROS wrapper for the costmap the controller will use
       costmap_2d::Costmap2D costmap_; ///< @brief The costmap the controller will use
-      tf::TransformListener* tf_; ///< @brief Used for transforming point clouds
+      TFListener* tf_; ///< @brief Used for transforming point clouds
       std::string global_frame_; ///< @brief The frame in which the controller will run
       double max_sensor_range_; ///< @brief Keep track of the effective maximum range of our sensors
       nav_msgs::Odometry base_odom_; ///< @brief Used to get the velocity of the robot
@@ -117,8 +127,11 @@ namespace safe_teleop {
       ros::Publisher cmd_pub_;
       ros::Subscriber cmd_sub_;
 
+      ros::ServiceServer clear_costmaps_srv_;
+
       boost::recursive_mutex odom_lock_;
       double max_vel_th_, min_vel_th_;
+      bool safe_backwards_;
   };
 
 }
