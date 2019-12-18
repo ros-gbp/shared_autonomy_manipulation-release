@@ -1,0 +1,12 @@
+Source: ros-melodic-safe-teleop-pr2
+Section: misc
+Priority: optional
+Maintainer: Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/safe_teleop_pr2
+Standards-Version: 3.9.2
+
+Package: ros-melodic-safe-teleop-pr2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-joy, ros-melodic-pr2-teleop, ros-melodic-safe-teleop-base
+Description: Launch files for running safe_teleop_base on pr2
