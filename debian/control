@@ -1,0 +1,12 @@
+Source: ros-melodic-safe-teleop-base
+Section: misc
+Priority: optional
+Maintainer: Charles DuHadway (maintained by Benjamin Pitzer) <foo@foo.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-base-local-planner, ros-melodic-catkin, ros-melodic-costmap-2d, ros-melodic-roscpp
+Homepage: http://ros.org/wiki/safe_teleop_base
+Standards-Version: 3.9.2
+
+Package: ros-melodic-safe-teleop-base
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-base-local-planner, ros-melodic-costmap-2d, ros-melodic-roscpp
+Description: This package provides automatic collision avoidance and is intended to be used for safer teleoperation of a robot base.
