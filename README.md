@@ -1,3 +1,29 @@
+## shared_autonomy_manipulation (melodic) - 0.0.3-1
+
+The packages in the `shared_autonomy_manipulation` repository were released into the `melodic` distro by running `/usr/bin/bloom-release shared_autonomy_manipulation -t melodic -r melodic` on `Wed, 18 Dec 2019 05:17:07 -0000`
+
+These packages were released:
+- `safe_teleop_base`
+- `safe_teleop_pr2`
+- `safe_teleop_stage`
+
+Version of package(s) in repository `shared_autonomy_manipulation`:
+
+- upstream repository: https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.14`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## shared_autonomy_manipulation (kinetic) - 0.0.3-1
 
 The packages in the `shared_autonomy_manipulation` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release shared_autonomy_manipulation -t kinetic -r kinetic` on `Wed, 18 Dec 2019 05:10:26 -0000`
